@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Oriana Abigail Gonzalez Rodriguez</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header .photo-container {
+            flex: 0 0 120px;
+        }
+        .header .photo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d4af37;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .header .info-container {
+            flex: 1;
+            text-align: left;
+        }
+        .header h1 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #d4af37;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .section p, .section li {
+            margin-bottom: 10px;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .contact-info div {
+            margin: 5px 0;
+        }
+        /* Availability Grid */
+        .availability-grid {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .day-cv {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            border: 2px solid;
+        }
+        .day-cv.available {
+            background: #d4af37;
+            color: white;
+            border-color: #d4af37;
+        }
+        .day-cv.unavailable {
+            background: transparent;
+            color: #999;
+            border-color: #ccc;
+        }
+        @media print {
+            body { padding: 20px; }
+            .availability-grid {
+                gap: 8px;
+            }
+            .day-cv {
+                width: 50px;
+                height: 50px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            .header .info-container {
+                text-align: center;
+            }
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="photo-container">
+            <img src="photo-oriana.jpg" alt="Oriana Abigail Gonzalez Rodriguez" onerror="this.style.display='none';">
+        </div>
+        <div class="info-container">
+            <h1>Oriana Abigail Gonzalez Rodriguez</h1>
+            <div class="contact-info">
+                <div>📧 oriana.gonzalez.rodriguez.1104@gmail.com</div>
+                <div>📱 +54 11 2636-2288</div>
+                <div>📍 Calle 18 B N°1125, Guernica, Buenos Aires</div>
+                <div>🆔 DNI: 45.688.692</div>
+                <div>🎂 21 años</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Objetivo Profesional</h2>
+        <p>Estudiante de Licenciatura en Artes Visuales busca incorporarse como <strong>vendedora y asesora de atención al cliente en joyería</strong>. Mi formación artística me permite brindar asesoramiento estético especializado, mientras que mi vocación de servicio me impulsa a crear experiencias memorables para cada cliente. Aspiro a combinar mi pasión por el arte con la satisfacción de ayudar a las personas a encontrar joyas que reflejen su personalidad y momentos especiales.</p>
+    </div>
+
+    <div class="section">
+        <h2>Educación</h2>
+        <p><strong>Licenciatura en Artes Visuales</strong><br>
+        Universidad Nacional de las Artes (UNA)<br>
+        <em>En curso</em></p>
+        
+        <p><strong>Secundario Completo</strong><br>
+        Instituto Rosario Vera Peñaloza<br>
+        <em>2021</em></p>
+    </div>
+
+    <div class="section">
+        <h2>Idiomas</h2>
+        <ul>
+            <li><strong>Español:</strong> Nativo</li>
+            <li><strong>Inglés:</strong> Intermedio</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia Laboral</h2>
+        <p>Buscando mi primera experiencia laboral formal.</p>
+    </div>
+
+    <div class="section">
+        <h2>Habilidades para Atención al Cliente</h2>
+        <ul>
+            <li><strong>Excelente presencia y comunicación:</strong> Capacidad para interactuar profesionalmente con clientes de diferentes perfiles</li>
+            <li><strong>Paciencia y empatía:</strong> Habilidad para escuchar las necesidades del cliente y ofrecer soluciones personalizadas</li>
+            <li><strong>Conocimiento en arte y estética:</strong> Formación que permite asesorar sobre diseño, combinaciones y estilos</li>
+            <li><strong>Responsabilidad y puntualidad:</strong> Compromiso con horarios y atención de calidad</li>
+            <li><strong>Facilidad de aprendizaje:</strong> Capacidad para asimilar conocimientos sobre productos, precios y técnicas de venta</li>
+            <li><strong>Asesoramiento personalizado:</strong> Aptitud para entender gustos individuales y sugerir opciones apropiadas</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Fortalezas para el Servicio al Cliente</h2>
+        <ul>
+            <li>Vocación de servicio y orientación al cliente</li>
+            <li>Capacidad para crear conexiones auténticas con las personas</li>
+            <li>Paciencia y tranquilidad en situaciones desafiantes</li>
+            <li>Habilidad para hacer sentir cómodos a los clientes</li>
+            <li>Sensibilidad para entender necesidades no expresadas</li>
+            <li>Entusiasmo por ayudar a encontrar la joya perfecta</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Intereses Relacionados con Ventas y Atención</h2>
+        <ul>
+            <li>Técnicas de venta consultiva y asesoramiento personalizado</li>
+            <li>Psicología del cliente y comportamiento de compra</li>
+            <li>Tendencias en joyería y significados simbólicos</li>
+            <li>Atención al cliente de excelencia y fidelización</li>
+            <li>Comercialización de productos de lujo y alta gama</li>
+            <li>Protocolo y etiqueta en ventas especializadas</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Disponibilidad Horaria</h2>
+        <div class="availability-grid">
+            <div class="day-cv available">Lun</div>
+            <div class="day-cv available">Mar</div>
+            <div class="day-cv unavailable">Mié</div>
+            <div class="day-cv available">Jue</div>
+            <div class="day-cv available">Vie</div>
+            <div class="day-cv available">Sáb</div>
+            <div class="day-cv available">Dom</div>
+        </div>
+        <p style="text-align: center; margin-top: 15px; font-style: italic; color: #666;">
+            <strong>Disponible:</strong> Lunes, martes, jueves, viernes, sábados y domingos
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Información Adicional</h2>
+        <p>Mi formación en Artes Visuales me proporciona una ventaja única como <strong>asesora de ventas en joyería</strong>, ya que puedo ofrecer a los clientes una perspectiva profesional sobre diseño, armonía de colores y estética. Esta combinación de conocimiento artístico y vocación de servicio me permite crear una experiencia de compra excepcional.</p>
+        
+        <p>Estoy altamente motivada para <strong>especializarme en atención al cliente</strong> en el sector joyero, incluyendo: técnicas de venta consultiva, conocimiento profundo de productos, manejo de objeciones, y creación de relaciones duraderas con los clientes. Mi objetivo es convertirme en la asesora en quien los clientes confíen para sus decisiones más importantes.</p>
+        
+        <p><strong>Compromiso:</strong> Brindar a cada cliente una atención personalizada, cálida y profesional, haciendo que cada visita sea una experiencia memorable.</p>
+    </div>
+
+    <script>
+        // Auto-print functionality for download simulation
+        window.onload = function() {
+            if (window.location.search.includes('download=true')) {
+                setTimeout(() => {
+                    window.print();
+                }, 500);
+            }
+        }
+    </script>
+</body>
+</html>

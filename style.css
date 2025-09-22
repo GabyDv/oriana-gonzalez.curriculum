@@ -1,0 +1,303 @@
+/* Fuentes y colores */
+:root {
+    --gold: #d4af37;
+    --dark: #1a1a1a;
+    --light: #f8f8f8;
+  }
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1604411206364-71bb85a5e66d?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1.glow {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--gold);
+    text-shadow: 0 0 20px rgba(212,175,55,0.8);
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .btn {
+    background: var(--gold);
+    color: var(--dark);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background: #e6c463;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 4rem 10%;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  
+  .skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skill-list li {
+    background: rgba(212,175,55,0.1);
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .skill-list li:hover {
+    background: var(--gold);
+    color: var(--dark);
+  }
+  
+  /* Contacto */
+  .contact a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* About Section Layout */
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+  align-items: center;
+  text-align: left;
+}
+
+.photo-section {
+  flex: 0 0 300px;
+}
+
+.about-content {
+  flex: 1;
+  text-align: center;
+}
+
+.about-content h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Photo Styles */
+.photo-placeholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  position: relative;
+  background: linear-gradient(135deg, var(--gold) 0%, #b8941f 100%);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-placeholder-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(135deg, var(--gold) 0%, #b8941f 100%);
+  text-align: center;
+  padding: 20px;
+}
+
+.photo-placeholder-text span {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.photo-placeholder-text p {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.photo-placeholder-text small {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.4;
+}
+
+/* CV Download */
+.cv-download {
+  margin-top: 30px;
+}
+
+.cv-btn {
+  background: var(--gold);
+  color: var(--dark);
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border: 2px solid var(--gold);
+}
+
+.cv-btn:hover {
+  background: transparent;
+  color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(212,175,55,0.3);
+}
+
+/* Availability Section */
+.availability {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.days-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  border: 3px solid;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.day.available {
+  background: linear-gradient(135deg, var(--gold) 0%, #e6c463 100%);
+  color: var(--dark);
+  border-color: var(--gold);
+  box-shadow: 0 4px 15px rgba(212,175,55,0.4);
+}
+
+.day.unavailable {
+  background: transparent;
+  color: #666;
+  border-color: #444;
+}
+
+.day.available:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212,175,55,0.6);
+}
+
+.availability-note {
+  color: #ccc;
+  font-size: 18px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .photo-section {
+    flex: none;
+  }
+  
+  .photo-placeholder {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+
+  .days-container {
+    gap: 10px;
+  }
+  
+  .day {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+  }
+}
+  
